@@ -1,0 +1,81 @@
+/*big tablets to smaller laptop screen*/
+@media only screen and (max-width: 1200px) {
+    html,body{
+        font-size: 16px;
+        
+    }
+    .about,.work-header{
+        margin-top: 80px;
+    }
+    .iconimg{
+        width: 17%;
+    }
+
+    .gitimg{
+    
+        width: 22%;
+    }
+    
+}
+
+/*smaller tablets to bigger tablets*/
+@media only screen and (max-width: 1023px) {
+    html,body{
+        font-size: 14px;
+        
+    }
+    .about,.work-header{
+        margin-top: 65px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+    .about-box:first-child{
+        padding: 0;
+        padding-left: 5%;
+    }
+    .laptop{
+     margin-right: 5%;
+    }
+    footer{
+        padding:30px;
+    }
+    footer p{
+        margin-top: 30px;
+    }
+    .work-subheader{
+        margin-bottom: 20px;
+
+    }
+
+}
+
+/*larger phones to smaller tablets */
+@media only screen and (max-width: 767px) {
+    html,body{
+        font-size: 12px;
+        
+    }
+    .about-header{
+        margin-bottom: 30px;
+    }
+    .contact-heading{
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+    .about,.work-header{
+        margin-top: 60px;
+    }
+    
+}
+/*smaller to larger mobile phones*/
+@media only screen and (max-width: 480px) {
+    html,body{
+        font-size: 12px;
+        
+    }
+    
+}
+
