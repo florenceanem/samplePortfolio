@@ -49,6 +49,13 @@
         margin-bottom: 20px;
 
     }
+    .iconimg{
+        width: 15%;
+    }
+    .gitimg{
+    
+        width: 20%;
+    }
 
 }
 
@@ -68,13 +75,38 @@
     .about,.work-header{
         margin-top: 60px;
     }
+    .iconimg{
+        width: 12%;
+    }
+    .gitimg{
     
+        width: 17%;
+    }
 }
 /*smaller to larger mobile phones*/
 @media only screen and (max-width: 480px) {
     html,body{
-        font-size: 12px;
-        
+        font-size: 12px;  
+    }
+    .laptop{
+        margin-top: 30px;
+    }
+    .footer-nav, .social-links{
+        float:none;
+        text-align: center;
+        padding: none;
+        margin:none;
+
+    }
+    .work-portfolio li{
+        width: 50%;
+    }
+    .iconimg{
+        width: 10%;
+    }
+    .gitimg{
+    
+        width: 14%;
     }
     
 }

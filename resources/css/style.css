@@ -1,7 +1,10 @@
+
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html,body{
     background-color: white;
@@ -35,6 +38,8 @@ html,body{
 }
 /****header****/
 header{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.3)),to(rgb(0,0,0,.7))),url(img/headerimg6.jpg);
+    background-image: -o-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(img/headerimg6.jpg);
     background-image: linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(img/headerimg6.jpg);
     height: 100vh;
     background-size: cover;
@@ -46,7 +51,9 @@ header{
     position: absolute;
     top:50%;
     left: 50%;
-    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
     text-align: center;
     
 }
@@ -104,6 +111,8 @@ header{
     margin-right: 45px;
     text-transform: uppercase;
     font-weight: 500;
+    -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,.main-nav li a:active{
@@ -206,12 +215,20 @@ header{
     width: 100%;
     opacity: 0.7;
     height: auto;
-    transform:scale(1.20);
+    -webkit-transform:scale(1.20);
+        -ms-transform:scale(1.20);
+            transform:scale(1.20);
+    -webkit-transition :opacity 0.5s, -webkit-transform 0.5s;
+    transition :opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition :transform 0.5s, opacity 0.5s;
     transition :transform 0.5s, opacity 0.5s;
+    transition :transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .portfolio-image img:hover{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
 
 }
@@ -250,6 +267,8 @@ header{
 }
 .social-header:hover,.social-header:active{
     border-bottom: 2px solid #FAE0E4 ;
+    -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -261,6 +280,8 @@ header{
 /**educational*/
 
 .educationsection{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8))), url(img/edu4.jpg);
+    background-image:-o-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(img/edu4.jpg);
     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(img/edu4.jpg);
     text-align: center;
     background-size:cover;
@@ -295,6 +316,8 @@ header{
 
 .edu li a:hover,.edu li a:active{
     border-bottom: 2px solid #f8c6cd ;
+    -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -363,6 +386,8 @@ footer{
 .footer-nav li a:active{
     color: white;
     text-decoration: none;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
     
 }
@@ -387,6 +412,8 @@ footer{
 .social-links li a:active{
     color: white;
     text-decoration: none;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
 }
 
